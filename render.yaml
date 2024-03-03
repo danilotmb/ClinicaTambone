@@ -1,8 +1,3 @@
-databases:
-  - name: Clinica
-    plan: free
-    databaseName: clinica
-    user: root
 
 services:
   - type: web
