@@ -3,10 +3,11 @@ databases:
     plan: free
     databaseName: Clinica
     user: root
+
 services:
   - type: web
     plan: free
-    name: laravel_memcache
+    name: clinicarossi
     runtime: docker
     envVars:
       # Database
@@ -14,7 +15,8 @@ services:
         value: mysql://root:root@127.0.0.1:8889/Clinica
       - key: DB_CONNECTION
         value: mysql
-        - key: APP_KEY
+      # Laravel
+      - key: APP_KEY
         sync: false
       - key: APP_ENV
         value: production
