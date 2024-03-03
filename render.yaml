@@ -1,7 +1,7 @@
 databases:
   - name: Clinica
     plan: free
-    databaseName: Clinica
+    databaseName: clinica
     user: root
 
 services:
@@ -12,7 +12,7 @@ services:
     envVars:
       # Database
       - key: DATABASE_URL
-        value: mysql://root:root@127.0.0.1:8889/Clinica
+        value: mysql://root:root@127.0.0.1:8889/clinica
       - key: DB_CONNECTION
         value: mysql
       # Laravel
